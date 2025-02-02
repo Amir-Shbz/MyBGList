@@ -5,12 +5,12 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/BoardGames": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "BoardGames"
         ],
-        "operationId": "GetWeatherForecast",
+        "operationId": "GetBoardGames",
         "responses": {
           "200": {
             "description": "OK",
@@ -19,7 +19,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/BoardGame"
                   }
                 }
               },
@@ -27,7 +27,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/BoardGame"
                   }
                 }
               },
@@ -35,7 +35,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
+                    "$ref": "#/components/schemas/BoardGame"
                   }
                 }
               }
@@ -43,28 +43,48 @@
           }
         }
       }
+    },
+    "/error": {
+      "get": {
+        "tags": [
+          "MyBGList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/error/Test": {
+      "get": {
+        "tags": [
+          "MyBGList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "BoardGame": {
         "type": "object",
         "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "year": {
             "type": "integer",
             "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
             "nullable": true
           }
         },

@@ -13,7 +13,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI();  
+}
+
+
+if (app.Configuration.GetValue<bool>("UseDeveloperExceptionPage"))
+{
     app.UseDeveloperExceptionPage();
 }
 else
@@ -24,6 +29,9 @@ else
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.MapGet("/error", () => Results.Problem());
+app.MapGet("/error/Test", () => { throw new Exception("TEST"); });
 
 app.MapControllers();
 

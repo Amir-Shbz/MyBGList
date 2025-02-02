@@ -34,3 +34,4 @@ D:\Projects\MyBGList\MyBGList\obj\Debug\net8.0\refint\MyBGList.dll
 D:\Projects\MyBGList\MyBGList\obj\Debug\net8.0\MyBGList.pdb
 D:\Projects\MyBGList\MyBGList\obj\Debug\net8.0\MyBGList.genruntimeconfig.cache
 D:\Projects\MyBGList\MyBGList\obj\Debug\net8.0\ref\MyBGList.dll
+D:\Projects\MyBGList\MyBGList\obj\Debug\net8.0\MyBGList.sourcelink.json
