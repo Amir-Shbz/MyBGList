@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:boardgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\dto\\restdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:dto\\restdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\dto\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:dto\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RestDTO.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\RestDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\RestDTO.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\RestDTO.cs",
+              "RelativeToolTip": "DTO\\RestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T17:23:47.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LinkDTO.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\LinkDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LinkDTO.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\LinkDTO.cs",
+              "RelativeToolTip": "DTO\\LinkDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T17:23:37.451Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,22 +58,9 @@
               "RelativeDocumentMoniker": "Controllers\\BoardGamesController.cs",
               "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
               "RelativeToolTip": "Controllers\\BoardGamesController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwCUAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T15:42:14.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BoardGame.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\BoardGame.cs",
-              "RelativeDocumentMoniker": "BoardGame.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\BoardGame.cs",
-              "RelativeToolTip": "BoardGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T15:40:03.833Z",
+              "WhenOpened": "2025-02-05T17:19:26.724Z",
               "EditorCaption": ""
             }
           ]

@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyBGList.BoardGame, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -21,30 +21,9 @@
     "EndpointName": "GetBoardGames"
   },
   {
-    "ContainingType": "MyBGList.Controllers.BoardGamesController",
-    "Method": "GetCount",
-    "RelativePath": "BoardGames",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Int32",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetCount"
-  },
-  {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_0",
-    "RelativePath": "error",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
+    "RelativePath": "COD/test",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -60,6 +39,22 @@
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
+    "RelativePath": "error",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
     "RelativePath": "error/Test",
     "HttpMethod": "GET",
     "IsController": false,
