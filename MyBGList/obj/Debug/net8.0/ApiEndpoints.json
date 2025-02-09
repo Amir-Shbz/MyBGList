@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.BoardGame[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -22,7 +22,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
     "RelativePath": "COD/test",
     "HttpMethod": "GET",
     "IsController": false,
@@ -38,7 +38,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
     "RelativePath": "error",
     "HttpMethod": "GET",
     "IsController": false,
@@ -54,7 +54,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
     "RelativePath": "error/Test",
     "HttpMethod": "GET",
     "IsController": false,

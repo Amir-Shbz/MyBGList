@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyBGList.DTO;
+using MyBGList.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyBGList.Controllers
 {
@@ -12,9 +14,11 @@ namespace MyBGList.Controllers
     public class BoardGamesController : ControllerBase
     {
         private readonly ILogger<BoardGamesController> _logger;
-        public BoardGamesController(ILogger<BoardGamesController> logger)
+        private readonly ApplicationDbContext _context;
+        public BoardGamesController(ILogger<BoardGamesController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         // The JSON Structure of our Response
@@ -29,27 +33,12 @@ namespace MyBGList.Controllers
         [HttpGet(Name = "GetBoardGames")]
         [EnableCors("AnyOrigin")]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
-        public RestDTO<BoardGame[]> Get()
+        public async Task<RestDTO<BoardGame[]>> Get()
         {
+            var query = _context.BoardGames;
             return new RestDTO<BoardGame[]>()
             {
-                Data = new BoardGame[] {
-                    new BoardGame() {
-                        Id = 1,
-                        Name = "Axis & Allies",
-                        Year = 1981
-                    },
-                    new BoardGame() {
-                        Id = 2,
-                        Name = "Citadels",
-                        Year = 2000
-                    },
-                    new BoardGame() {
-                        Id = 3,
-                        Name = "Terraforming Mars",
-                        Year = 2016
-                    }
-                },
+                Data = await query.ToArrayAsync(),
                 Links = new List<LinkDTO> {
                     new LinkDTO(
                         Url.Action(null, "BoardGames", null, Request.Scheme)!,
