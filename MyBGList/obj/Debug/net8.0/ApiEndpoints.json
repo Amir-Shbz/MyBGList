@@ -67,5 +67,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.SeedController",
+    "Method": "Put",
+    "RelativePath": "Seed",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Seed"
   }
 ]
