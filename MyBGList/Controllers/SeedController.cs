@@ -118,7 +118,11 @@ namespace MyBGList.Controllers
                         });
                     }
             }
+            using var transaction = _context.Database.BeginTransaction();
+            _context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT BoardGames ON");
             await _context.SaveChangesAsync();
+            _context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT BoardGames OFF");
+            transaction.Commit();
             return new JsonResult(new
             {
                 BoardGames = _context.BoardGames.Count(),
