@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyBGList.Models;
+using MyBGList.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,12 @@ builder.Services.AddCors(options => {
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddSwaggerGen(options => {
+    options.ParameterFilter<SortColumnFilter>();
+    options.ParameterFilter<SortOrderFilter>();
+});
+
 
 var app = builder.Build();
 

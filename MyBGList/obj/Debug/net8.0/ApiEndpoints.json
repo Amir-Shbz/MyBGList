@@ -47,6 +47,60 @@
     "EndpointName": "GetBoardGames"
   },
   {
+    "ContainingType": "MyBGList.Controllers.BoardGamesController",
+    "Method": "Post",
+    "RelativePath": "BoardGames",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "MyBGList.DTO.BoardGameDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.BoardGame, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateBoardGame"
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.BoardGamesController",
+    "Method": "Delete",
+    "RelativePath": "BoardGames",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.BoardGame, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteBoardGame"
+  },
+  {
     "ContainingType": "Program\u002B\u003C\u003Ec",
     "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
     "RelativePath": "COD/test",

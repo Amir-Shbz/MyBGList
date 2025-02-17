@@ -4,6 +4,8 @@ using MyBGList.DTO;
 using MyBGList.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using System.ComponentModel.DataAnnotations;
+using MyBGList.Attributes;
 
 namespace MyBGList.Controllers
 {
@@ -31,10 +33,11 @@ namespace MyBGList.Controllers
         [HttpGet(Name = "GetBoardGames")]
         [EnableCors("AnyOrigin")]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
-        public async Task<RestDTO<BoardGame[]>> Get(int pageIndex=0, 
-                                                    int pageSize=10, 
-                                                    string? sortColumn = "Name", 
-                                                    string? sortOrder = "ASC",
+        public async Task<RestDTO<BoardGame[]>> Get(int pageIndex = 0,
+                                                    [Range(1, 100)] int pageSize = 10,
+                                                    [SortColumnValidator(typeof(BoardGameDTO))] string? sortColumn = "Name",
+                                                    [SortOrderValidator] string? sortOrder = "ASC",
+                                                    //[RegularExpression("ASC|DESC")]  string? sortOrder = "ASC",
                                                     string? filterQuery = null)
         {
             var query = _context.BoardGames.AsQueryable();
@@ -64,5 +67,64 @@ namespace MyBGList.Controllers
             };
         }
 
+        [HttpPost(Name = "UpdateBoardGame")]
+        [ResponseCache(NoStore = true)]
+        public async Task<RestDTO<BoardGame?>> Post(BoardGameDTO model)
+        {
+            var boardgame = await _context.BoardGames.Where(b => b.Id == model.Id).FirstOrDefaultAsync();
+            if (boardgame != null)
+            {
+                if (!string.IsNullOrEmpty(model.Name))
+                    boardgame.Name = model.Name;
+                if (model.Year.HasValue && model.Year.Value > 0)
+                    boardgame.Year = model.Year.Value;
+                boardgame.LastModifiedDate = DateTime.Now;
+                _context.BoardGames.Update(boardgame);
+                await _context.SaveChangesAsync();
+            }
+
+            return new RestDTO<BoardGame?>
+            {
+                Data = boardgame,
+                Links = new List<LinkDTO>
+                    {
+                        new LinkDTO(
+                            Url.Action(
+                                null,
+                                "BoardGames",
+                                model,
+                                Request.Scheme)!,
+                            "self",
+                            "POST"),
+                    }
+            };
+        }
+
+        [HttpDelete(Name = "DeleteBoardGame")]
+        [ResponseCache(NoStore = true)]
+        public async Task<RestDTO<BoardGame?>> Delete(int id)
+        {
+            var boardgame = await _context.BoardGames.Where(b => b.Id == id).FirstOrDefaultAsync();
+            if (boardgame != null)
+            {
+                _context.BoardGames.Remove(boardgame);
+                await _context.SaveChangesAsync();
+            };
+            return new RestDTO<BoardGame?>()
+            {
+                Data = boardgame,
+                Links = new List<LinkDTO>
+                {
+                        new LinkDTO(
+                        Url.Action(
+                            null,
+                            "BoardGames",
+                            id,
+                            Request.Scheme)!,
+                        "self",
+                        "DELETE"),
+                }
+            };
+        }
     }
 }

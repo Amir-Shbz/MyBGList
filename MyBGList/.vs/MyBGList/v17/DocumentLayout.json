@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Projects\\MyBGList\\MyBGList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\dto\\restdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:dto\\restdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\sortcolumnfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\sortcolumnfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\sortorderfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\sortorderfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\attributes\\sortcolumnvalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:attributes\\sortcolumnvalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\attributes\\sortordervalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:attributes\\sortordervalidatorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RestDTO.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\RestDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\RestDTO.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\RestDTO.cs",
-              "RelativeToolTip": "DTO\\RestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:54:12.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:40:50.11Z",
+              "WhenOpened": "2025-02-17T20:05:23.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "SortColumnFilter.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\SortColumnFilter.cs",
+              "RelativeDocumentMoniker": "Swagger\\SortColumnFilter.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\SortColumnFilter.cs",
+              "RelativeToolTip": "Swagger\\SortColumnFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T20:03:06.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SortOrderFilter.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\SortOrderFilter.cs",
+              "RelativeDocumentMoniker": "Swagger\\SortOrderFilter.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\SortOrderFilter.cs",
+              "RelativeToolTip": "Swagger\\SortOrderFilter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T19:59:40.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SortOrderValidatorAttribute.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\SortOrderValidatorAttribute.cs",
+              "RelativeDocumentMoniker": "Attributes\\SortOrderValidatorAttribute.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\SortOrderValidatorAttribute.cs",
+              "RelativeToolTip": "Attributes\\SortOrderValidatorAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T19:38:28.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SortColumnValidatorAttribute.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\SortColumnValidatorAttribute.cs",
+              "RelativeDocumentMoniker": "Attributes\\SortColumnValidatorAttribute.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\SortColumnValidatorAttribute.cs",
+              "RelativeToolTip": "Attributes\\SortColumnValidatorAttribute.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T19:37:53.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BoardGamesController.cs",
               "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
               "RelativeDocumentMoniker": "Controllers\\BoardGamesController.cs",
               "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
               "RelativeToolTip": "Controllers\\BoardGamesController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwDAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T16:11:16.815Z",
               "EditorCaption": ""
