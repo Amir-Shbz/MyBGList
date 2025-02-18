@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
 using System.ComponentModel.DataAnnotations;
 using MyBGList.Attributes;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MyBGList.Controllers
 {
@@ -33,33 +34,28 @@ namespace MyBGList.Controllers
         [HttpGet(Name = "GetBoardGames")]
         [EnableCors("AnyOrigin")]
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
-        public async Task<RestDTO<BoardGame[]>> Get(int pageIndex = 0,
-                                                    [Range(1, 100)] int pageSize = 10,
-                                                    [SortColumnValidator(typeof(BoardGameDTO))] string? sortColumn = "Name",
-                                                    [SortOrderValidator] string? sortOrder = "ASC",
-                                                    //[RegularExpression("ASC|DESC")]  string? sortOrder = "ASC",
-                                                    string? filterQuery = null)
+        public async Task<RestDTO<BoardGame[]>> Get([FromQuery] RequestDTO<BoardGameDTO> input)
         {
             var query = _context.BoardGames.AsQueryable();
-            if (!string.IsNullOrEmpty(filterQuery))
-                query = query.Where(b => b.Name.Contains(filterQuery));
+            if (!string.IsNullOrEmpty(input.FilterQuery))
+                query = query.Where(b => b.Name.Contains(input.FilterQuery));
             var recordCount = await query.CountAsync();
-            query = query.OrderBy($"{sortColumn} {sortOrder}")
-                                           .Skip(pageIndex * pageSize)
-                                           .Take(pageSize);
+            query = query.OrderBy($"{input.SortColumn} {input.SortOrder}")
+                                           .Skip(input.PageIndex * input.PageSize)
+                                           .Take(input.PageSize);
 
             return new RestDTO<BoardGame[]>()
             {
                 Data = await query.ToArrayAsync(),
-                PageIndex = pageIndex,
-                PageSize = pageSize,
+                PageIndex = input.PageIndex,
+                PageSize = input.PageSize,
                 RecordCount = recordCount,
                 Links = new List<LinkDTO> {
                      new LinkDTO(
                      Url.Action(
                          null,
                          "BoardGames",
-                         new { pageIndex, pageSize },
+                         new { input.PageIndex, input.PageSize },
                          Request.Scheme)!,
                      "self",
                      "GET"),
