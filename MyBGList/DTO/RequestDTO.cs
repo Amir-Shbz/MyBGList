@@ -14,7 +14,6 @@ namespace MyBGList.DTO
         public int PageSize { get; set; } = 10;
 
         [DefaultValue("Name")]
-        [SortColumnValidator(typeof(BoardGameDTO))]
         public string? SortColumn { get; set; } = "Name";
 
         [DefaultValue("ASC")] 

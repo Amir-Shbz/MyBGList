@@ -8,27 +8,27 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pageIndex",
+        "Name": "PageIndex",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "pageSize",
+        "Name": "PageSize",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "sortColumn",
+        "Name": "SortColumn",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "sortOrder",
+        "Name": "SortOrder",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "filterQuery",
+        "Name": "FilterQuery",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -102,7 +102,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
     "RelativePath": "COD/test",
     "HttpMethod": "GET",
     "IsController": false,
@@ -117,8 +117,109 @@
     ]
   },
   {
+    "ContainingType": "MyBGList.Controllers.DomainsController",
+    "Method": "Get",
+    "RelativePath": "Domains",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortColumn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortOrder",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterQuery",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.Domain[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetDomains"
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.DomainsController",
+    "Method": "Post",
+    "RelativePath": "Domains",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "MyBGList.DTO.DomainDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.Domain, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateDomain"
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.DomainsController",
+    "Method": "Delete",
+    "RelativePath": "Domains",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.Domain, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteDomain"
+  },
+  {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
     "RelativePath": "error",
     "HttpMethod": "GET",
     "IsController": false,
@@ -134,7 +235,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_3",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
     "RelativePath": "error/Test",
     "HttpMethod": "GET",
     "IsController": false,
@@ -147,6 +248,107 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.MechanicsController",
+    "Method": "Get",
+    "RelativePath": "Mechanics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortColumn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortOrder",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterQuery",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.Mechanic[], MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetMechanics"
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.MechanicsController",
+    "Method": "Post",
+    "RelativePath": "Mechanics",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "MyBGList.DTO.MechanicDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.Mechanic, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateMechanic"
+  },
+  {
+    "ContainingType": "MyBGList.Controllers.MechanicsController",
+    "Method": "Delete",
+    "RelativePath": "Mechanics",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBGList.DTO.RestDTO\u00601[[MyBGList.Models.Mechanic, MyBGList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteMechanic"
   },
   {
     "ContainingType": "MyBGList.Controllers.SeedController",
