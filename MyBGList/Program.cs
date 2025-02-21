@@ -47,6 +47,8 @@ builder.Services.AddSwaggerGen(options => {
     options.ParameterFilter<SortOrderFilter>();
 });
 
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+    options.SuppressModelStateInvalidFilter = true);
 
 var app = builder.Build();
 
