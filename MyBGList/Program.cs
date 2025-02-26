@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -47,8 +48,9 @@ builder.Services.AddSwaggerGen(options => {
     options.ParameterFilter<SortOrderFilter>();
 });
 
-builder.Services.Configure<ApiBehaviorOptions>(options =>
-    options.SuppressModelStateInvalidFilter = true);
+//Code replaced by the [ManualValidationFilter] attribute
+//builder.Services.Configure<ApiBehaviorOptions>(options =>
+//    options.SuppressModelStateInvalidFilter = true);
 
 var app = builder.Build();
 

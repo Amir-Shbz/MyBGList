@@ -45,7 +45,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "default": "ASC"
+              "default": "ASC",
+              "pattern": "^ASC$|^DESC$"
             }
           },
           {
@@ -206,7 +207,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "default": "ASC"
+              "default": "ASC",
+              "pattern": "^ASC$|^DESC$"
             }
           },
           {
@@ -367,7 +369,8 @@
             "in": "query",
             "schema": {
               "type": "string",
-              "default": "ASC"
+              "default": "ASC",
+              "pattern": "^ASC$|^DESC$"
             }
           },
           {
