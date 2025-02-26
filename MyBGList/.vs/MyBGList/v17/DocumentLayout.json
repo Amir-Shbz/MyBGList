@@ -46,8 +46,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T19:40:07.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T19:40:07.839Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T19:39:54.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T19:39:54.986Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Attributes\\ManualValidationFilterAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T19:31:06.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T19:31:06.606Z"
             },
             {
               "$type": "Document",
@@ -85,8 +82,7 @@
               "RelativeToolTip": "Controllers\\DomainsController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T19:11:24.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T19:11:24.216Z"
             },
             {
               "$type": "Document",
@@ -96,7 +92,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAQwFcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwFsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T19:09:49.656Z",
               "EditorCaption": ""
