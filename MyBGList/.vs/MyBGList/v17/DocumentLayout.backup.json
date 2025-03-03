@@ -5,22 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\domainscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\domainscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\attributes\\manualvalidationfilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:attributes\\manualvalidationfilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,63 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T19:40:07.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T19:39:54.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ManualValidationFilterAttribute.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\ManualValidationFilterAttribute.cs",
-              "RelativeDocumentMoniker": "Attributes\\ManualValidationFilterAttribute.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\ManualValidationFilterAttribute.cs",
-              "RelativeToolTip": "Attributes\\ManualValidationFilterAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T19:31:06.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DomainsController.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\DomainsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DomainsController.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\DomainsController.cs",
-              "RelativeToolTip": "Controllers\\DomainsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T19:11:24.216Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,9 +28,9 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAQwFcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T19:09:49.656Z",
+              "WhenOpened": "2025-03-03T19:49:50.465Z",
               "EditorCaption": ""
             }
           ]

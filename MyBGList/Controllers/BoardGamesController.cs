@@ -36,6 +36,8 @@ namespace MyBGList.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
         public async Task<RestDTO<BoardGame[]>> Get([FromQuery] RequestDTO<BoardGameDTO> input)
         {
+            _logger.LogInformation("Get Method Started.");
+
             var query = _context.BoardGames.AsQueryable();
             if (!string.IsNullOrEmpty(input.FilterQuery))
                 query = query.Where(b => b.Name.Contains(input.FilterQuery));

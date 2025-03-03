@@ -10,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Logging.ClearProviders().
+    AddSimpleConsole().
+    AddDebug();
+
 builder.Services.AddControllers(options =>
 {
     options.ModelBindingMessageProvider.SetValueIsInvalidAccessor(
@@ -115,5 +119,23 @@ app.MapGet("/COD/test", [EnableCors("AnyOrigin")]
 
 app.MapControllers().RequireCors("AnyOrigin");
 
+app.UseExceptionHandler(action =>
+{
+    action.Run(async context =>
+    {
+        var exceptionHandler =
+        context.Features.Get<IExceptionHandlerPathFeature>();
+        var details = new ProblemDetails();
+        details.Detail = exceptionHandler?.Error.Message;
+        details.Extensions["traceId"] =
+        System.Diagnostics.Activity.Current?.Id
+        ?? context.TraceIdentifier;
+        details.Type =
+        "https://tools.ietf.org/html/rfc7231#section-6.6.1";
+        details.Status = StatusCodes.Status500InternalServerError;
+        await context.Response.WriteAsync(
+        System.Text.Json.JsonSerializer.Serialize(details));
+    });
+});
 
 app.Run();
