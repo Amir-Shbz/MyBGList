@@ -4,9 +4,9 @@ using MyBGList.DTO;
 using MyBGList.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
-using System.ComponentModel.DataAnnotations;
-using MyBGList.Attributes;
-using Microsoft.IdentityModel.Tokens;
+using MyBGList.Constants;
+
+
 
 namespace MyBGList.Controllers
 {
@@ -36,7 +36,7 @@ namespace MyBGList.Controllers
         [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
         public async Task<RestDTO<BoardGame[]>> Get([FromQuery] RequestDTO<BoardGameDTO> input)
         {
-            _logger.LogInformation("Get Method Started.");
+            _logger.LogInformation(CustomLogEvents.BoardGamesController_Get, "Get Method Started.");
 
             var query = _context.BoardGames.AsQueryable();
             if (!string.IsNullOrEmpty(input.FilterQuery))
