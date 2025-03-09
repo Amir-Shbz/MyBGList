@@ -5,6 +5,8 @@ using MyBGList.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
 using MyBGList.Constants;
+using Microsoft.Extensions.Caching.Memory;
+using System.Text.Json;
 
 
 
@@ -16,10 +18,12 @@ namespace MyBGList.Controllers
     {
         private readonly ILogger<BoardGamesController> _logger;
         private readonly ApplicationDbContext _context;
-        public BoardGamesController(ILogger<BoardGamesController> logger, ApplicationDbContext context)
+        private readonly IMemoryCache _memoryCache;
+        public BoardGamesController(ILogger<BoardGamesController> logger, ApplicationDbContext context, IMemoryCache memoryCache)
         {
             _logger = logger;
             _context = context;
+            _memoryCache = memoryCache;
         }
 
         // The JSON Structure of our Response
@@ -33,18 +37,29 @@ namespace MyBGList.Controllers
 
         [HttpGet(Name = "GetBoardGames")]
         [EnableCors("AnyOrigin")]
-        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
+        [ResponseCache(CacheProfileName = "Any-60")]
         public async Task<RestDTO<BoardGame[]>> Get([FromQuery] RequestDTO<BoardGameDTO> input)
         {
-            _logger.LogInformation(CustomLogEvents.BoardGamesController_Get, "Get Method Started.");
+            _logger.LogInformation(CustomLogEvents.BoardGamesController_Get,
+                                                "Get method started at {0}", DateTime.Now.ToString("HH:mm"));
 
             var query = _context.BoardGames.AsQueryable();
             if (!string.IsNullOrEmpty(input.FilterQuery))
                 query = query.Where(b => b.Name.Contains(input.FilterQuery));
+
             var recordCount = await query.CountAsync();
-            query = query.OrderBy($"{input.SortColumn} {input.SortOrder}")
-                                           .Skip(input.PageIndex * input.PageSize)
-                                           .Take(input.PageSize);
+
+            BoardGame[]? result = null;
+            var cacheKey = $"{input.GetType()}-{JsonSerializer.Serialize(input)}";
+            if (!_memoryCache.TryGetValue<BoardGame[]>(cacheKey, out result))
+            {
+                query = query
+                        .OrderBy($"{input.SortColumn} {input.SortOrder}")
+                        .Skip(input.PageIndex * input.PageSize)
+                        .Take(input.PageSize);
+                result = await query.ToArrayAsync();
+                _memoryCache.Set(cacheKey, result, new TimeSpan(0, 0, 30));
+            }
 
             return new RestDTO<BoardGame[]>()
             {

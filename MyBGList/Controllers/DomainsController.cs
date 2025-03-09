@@ -21,7 +21,7 @@ namespace MyBGList.Controllers
         }
 
         [HttpGet(Name = "GetDomains")]
-        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
+        [ResponseCache(CacheProfileName = "Any-60")]
         [ManualValidationFilter]
         public async Task<ActionResult<RestDTO<Domain[]>>> Get([FromQuery] RequestDTO<DomainDTO> input)
         {

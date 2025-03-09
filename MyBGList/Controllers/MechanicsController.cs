@@ -19,7 +19,7 @@ namespace MyBGList.Controllers
         }
 
         [HttpGet(Name = "GetMechanics")]
-        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
+        [ResponseCache(CacheProfileName = "Any-60")]
         public async Task<RestDTO<Mechanic[]>> Get([FromQuery] RequestDTO<MechanicDTO> input)
         {
             var query = _context.Mechanics.AsQueryable();

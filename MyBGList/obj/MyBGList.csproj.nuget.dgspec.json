@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "Microsoft.Extensions.Caching.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[9.0.0, )"

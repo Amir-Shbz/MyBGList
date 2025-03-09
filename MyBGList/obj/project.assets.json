@@ -642,10 +642,10 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/9.0.1": {
+      "Microsoft.Extensions.Caching.Abstractions/9.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.1"
+          "Microsoft.Extensions.Primitives": "9.0.2"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
@@ -682,6 +682,25 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.SqlServer/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Identity": "1.11.4",
+          "Microsoft.Data.SqlClient": "4.0.5",
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Options": "9.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/8.0.0": {
@@ -761,7 +780,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.1": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -901,11 +920,11 @@
           "buildTransitive/net8.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
-      "Microsoft.Extensions.Options/9.0.1": {
+      "Microsoft.Extensions.Options/9.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.1",
-          "Microsoft.Extensions.Primitives": "9.0.1"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Primitives": "9.0.2"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Options.dll": {
@@ -944,7 +963,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Primitives/9.0.1": {
+      "Microsoft.Extensions.Primitives/9.0.2": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
@@ -3495,10 +3514,10 @@
         "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
       ]
     },
-    "Microsoft.Extensions.Caching.Abstractions/9.0.1": {
-      "sha512": "Eghsg9SyIvq0c8x6cUpe71BbQoOmsytXxqw2+ZNiTnP8a8SBLKgEor1zZeWhC0588IbS2M0PP4gXGAd9qF862Q==",
+    "Microsoft.Extensions.Caching.Abstractions/9.0.2": {
+      "sha512": "a7QhA25n+BzSM5r5d7JznfyluMBGI7z3qyLlFviZ1Eiqv6DdiK27sLZdP/rpYirBM6UYAKxu5TbmfhIy13GN9A==",
       "type": "package",
-      "path": "microsoft.extensions.caching.abstractions/9.0.1",
+      "path": "microsoft.extensions.caching.abstractions/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3518,7 +3537,7 @@
         "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "microsoft.extensions.caching.abstractions.9.0.1.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.9.0.2.nupkg.sha512",
         "microsoft.extensions.caching.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3549,6 +3568,25 @@
         "microsoft.extensions.caching.memory.9.0.1.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.SqlServer/9.0.2": {
+      "sha512": "4vns+leOoXyWpLbAoAdPBq+7bKwdjtUC0445vs5KVEF691VNWChTlrLBl4RcIiQuNCAAry1ielzdeNil0wLmRA==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.sqlserver/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/net462/Microsoft.Extensions.Caching.SqlServer.xml",
+        "lib/net9.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/net9.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "microsoft.extensions.caching.sqlserver.9.0.2.nupkg.sha512",
+        "microsoft.extensions.caching.sqlserver.nuspec"
       ]
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
@@ -3678,10 +3716,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.1": {
-      "sha512": "Tr74eP0oQ3AyC24ch17N8PuEkrPbD0JqIfENCYqmgKYNOmL8wQKzLJu3ObxTUDrjnn4rHoR1qKa37/eQyHmCDA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
+      "sha512": "MNe7GSTBf3jQx5vYrXF0NZvn6l7hUKF6J54ENfAgCO8y6xjN1XUmKKWG464LP2ye6QqDiA1dkaWEZBYnhoZzjg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.1",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3703,7 +3741,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3922,10 +3960,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options/9.0.1": {
-      "sha512": "nggoNKnWcsBIAaOWHA+53XZWrslC7aGeok+aR+epDPRy7HI7GwMnGZE8yEsL2Onw7kMOHVHwKcsDls1INkNUJQ==",
+    "Microsoft.Extensions.Options/9.0.2": {
+      "sha512": "zr98z+AN8+isdmDmQRuEJ/DAKZGUTHmdv3t0ZzjHvNqvA44nAgkXE9kYtfoN6581iALChhVaSw2Owt+Z2lVbkQ==",
       "type": "package",
-      "path": "microsoft.extensions.options/9.0.1",
+      "path": "microsoft.extensions.options/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3962,7 +4000,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.9.0.1.nupkg.sha512",
+        "microsoft.extensions.options.9.0.2.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3997,10 +4035,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/9.0.1": {
-      "sha512": "bHtTesA4lrSGD1ZUaMIx6frU3wyy0vYtTa/hM6gGQu5QNrydObv8T5COiGUWsisflAfmsaFOe9Xvw5NSO99z0g==",
+    "Microsoft.Extensions.Primitives/9.0.2": {
+      "sha512": "puBMtKe/wLuYa7H6docBkLlfec+h8L35DXqsDKKJgW0WY5oCwJ3cBJKcDaZchv6knAyqOMfsl6VUbaR++E5LXA==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/9.0.1",
+      "path": "microsoft.extensions.primitives/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4020,7 +4058,7 @@
         "lib/net9.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.9.0.1.nupkg.sha512",
+        "microsoft.extensions.primitives.9.0.2.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -5693,6 +5731,7 @@
       "Microsoft.EntityFrameworkCore >= 9.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.1",
+      "Microsoft.Extensions.Caching.SqlServer >= 9.0.2",
       "Serilog.AspNetCore >= 9.0.0",
       "Serilog.Sinks.MSSqlServer >= 8.1.0",
       "Swashbuckle.AspNetCore >= 6.6.2",
@@ -5766,6 +5805,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.1, )"
+          },
+          "Microsoft.Extensions.Caching.SqlServer": {
+            "target": "Package",
+            "version": "[9.0.2, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",
