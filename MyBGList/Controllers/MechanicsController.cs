@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using MyBGList.DTO;
+using MyBGList.Extensions;
 using MyBGList.Models;
 using System.Linq.Dynamic.Core;
+using System.Text.Json;
 
 namespace MyBGList.Controllers
 {
@@ -12,10 +15,12 @@ namespace MyBGList.Controllers
     {
         private readonly ILogger<MechanicsController> _logger;
         private readonly ApplicationDbContext _context;
-        public MechanicsController(ILogger<MechanicsController> logger, ApplicationDbContext context)
+        private readonly IDistributedCache _distributedCache;
+        public MechanicsController(ILogger<MechanicsController> logger, ApplicationDbContext context, IDistributedCache distributedCache)
         {
             _logger = logger;
             _context = context;
+            _distributedCache = distributedCache;
         }
 
         [HttpGet(Name = "GetMechanics")]
@@ -26,9 +31,17 @@ namespace MyBGList.Controllers
             if (!string.IsNullOrEmpty(input.FilterQuery))
                 query = query.Where(b => b.Name.Contains(input.FilterQuery));
             var recordCount = await query.CountAsync();
-            query = query.OrderBy($"{input.SortColumn} {input.SortOrder}")
-                         .Skip(input.PageIndex * input.PageSize)
-                         .Take(input.PageSize);
+
+            Mechanic[]? result = null; 
+            var cacheKey = $"{input.GetType()}-{JsonSerializer.Serialize(input)}"; 
+            if (!_distributedCache.TryGetValue<Mechanic[]>(cacheKey, out result)) 
+            {
+                query = query.OrderBy($"{input.SortColumn} {input.SortOrder}")
+                             .Skip(input.PageIndex * input.PageSize)
+                             .Take(input.PageSize);
+                result = await query.ToArrayAsync(); 
+                _distributedCache.Set(cacheKey, result, new TimeSpan(0, 0, 30)); 
+            }
 
             return new RestDTO<Mechanic[]>()
             {
