@@ -613,12 +613,59 @@
         }
       }
     },
-    "/Seed": {
+    "/auth/test/1": {
+      "get": {
+        "tags": [
+          "MyBGList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/auth/test/2": {
+      "get": {
+        "tags": [
+          "MyBGList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/auth/test/3": {
+      "get": {
+        "tags": [
+          "MyBGList"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Seed/BoardGameData": {
       "put": {
         "tags": [
           "Seed"
         ],
-        "operationId": "Seed",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Seed/AuthData": {
+      "post": {
+        "tags": [
+          "Seed"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1167,6 +1214,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please enter token",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

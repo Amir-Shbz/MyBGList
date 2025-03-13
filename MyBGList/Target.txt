@@ -4,3 +4,4 @@
 04 - Caching
 05 - Authentication
 06 - Authorization
+07 - GraphQL
