@@ -229,6 +229,46 @@
         }
       }
     },
+    "/BoardGames/{id}": {
+      "get": {
+        "tags": [
+          "BoardGames"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BoardGameRestDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BoardGameRestDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BoardGameRestDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/Domains": {
       "get": {
         "tags": [

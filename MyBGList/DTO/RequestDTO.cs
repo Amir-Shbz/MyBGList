@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+﻿using DefaultValueAttribute = System.ComponentModel.DefaultValueAttribute;
 using System.ComponentModel.DataAnnotations;
 using MyBGList.Attributes;
 

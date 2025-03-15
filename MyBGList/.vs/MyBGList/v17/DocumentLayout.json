@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\MyBGList\\MyBGList\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BoardGamesController.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BoardGamesController.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
-              "RelativeToolTip": "Controllers\\BoardGamesController.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAqwK4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T20:57:47.901Z",
-              "EditorCaption": ""
             }
           ]
         }

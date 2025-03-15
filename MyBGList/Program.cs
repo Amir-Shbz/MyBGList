@@ -11,6 +11,8 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MyBGList.Constants;
+using MyBGList.GraphQL;
+using MyBGList.gRPC;
 using MyBGList.Models;
 using MyBGList.Swagger;
 using Serilog;
@@ -99,6 +101,16 @@ builder.Services.AddCors(options => {
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddGraphQLServer()
+    .AddAuthorization() 
+    .AddQueryType<Query>() 
+    .AddMutationType<Mutation>() 
+    .AddProjections() 
+    .AddFiltering() 
+    .AddSorting();
+
+builder.Services.AddGrpc();
 
 builder.Services.AddIdentity<ApiUser, IdentityRole>(options =>
 {
@@ -215,6 +227,10 @@ app.UseResponseCaching();
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.MapGraphQL();
+
+app.MapGrpcService<GrpcService>();
 
 app.Use((context, next) =>
 {
