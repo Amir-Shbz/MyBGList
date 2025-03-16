@@ -227,3 +227,10 @@ D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\HotChocolate.Utilities.Dependency
 D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\HotChocolate.Validation.dll
 D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\System.IO.Hashing.dll
 D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Yarp.ReverseProxy.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Google.Protobuf.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.AspNetCore.Server.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Core.Api.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Net.Client.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Net.ClientFactory.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Net.Common.dll

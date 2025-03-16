@@ -49,6 +49,8 @@ namespace MyBGList.gRPC {
     static readonly grpc::Marshaller<global::MyBGList.gRPC.BoardGameRequest> __Marshaller_Grpc_BoardGameRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::MyBGList.gRPC.BoardGameRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::MyBGList.gRPC.BoardGameResponse> __Marshaller_Grpc_BoardGameResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::MyBGList.gRPC.BoardGameResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::MyBGList.gRPC.UpdateBoardGameRequest> __Marshaller_Grpc_UpdateBoardGameRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::MyBGList.gRPC.UpdateBoardGameRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::MyBGList.gRPC.BoardGameRequest, global::MyBGList.gRPC.BoardGameResponse> __Method_GetBoardGame = new grpc::Method<global::MyBGList.gRPC.BoardGameRequest, global::MyBGList.gRPC.BoardGameResponse>(
@@ -56,6 +58,14 @@ namespace MyBGList.gRPC {
         __ServiceName,
         "GetBoardGame",
         __Marshaller_Grpc_BoardGameRequest,
+        __Marshaller_Grpc_BoardGameResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::MyBGList.gRPC.UpdateBoardGameRequest, global::MyBGList.gRPC.BoardGameResponse> __Method_UpdateBoardGame = new grpc::Method<global::MyBGList.gRPC.UpdateBoardGameRequest, global::MyBGList.gRPC.BoardGameResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateBoardGame",
+        __Marshaller_Grpc_UpdateBoardGameRequest,
         __Marshaller_Grpc_BoardGameResponse);
 
     /// <summary>Service descriptor</summary>
@@ -70,6 +80,12 @@ namespace MyBGList.gRPC {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::MyBGList.gRPC.BoardGameResponse> GetBoardGame(global::MyBGList.gRPC.BoardGameRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::MyBGList.gRPC.BoardGameResponse> UpdateBoardGame(global::MyBGList.gRPC.UpdateBoardGameRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +139,26 @@ namespace MyBGList.gRPC {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetBoardGame, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::MyBGList.gRPC.BoardGameResponse UpdateBoardGame(global::MyBGList.gRPC.UpdateBoardGameRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateBoardGame(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::MyBGList.gRPC.BoardGameResponse UpdateBoardGame(global::MyBGList.gRPC.UpdateBoardGameRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateBoardGame, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::MyBGList.gRPC.BoardGameResponse> UpdateBoardGameAsync(global::MyBGList.gRPC.UpdateBoardGameRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateBoardGameAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::MyBGList.gRPC.BoardGameResponse> UpdateBoardGameAsync(global::MyBGList.gRPC.UpdateBoardGameRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateBoardGame, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override GrpcClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +173,8 @@ namespace MyBGList.gRPC {
     public static grpc::ServerServiceDefinition BindService(GrpcBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetBoardGame, serviceImpl.GetBoardGame).Build();
+          .AddMethod(__Method_GetBoardGame, serviceImpl.GetBoardGame)
+          .AddMethod(__Method_UpdateBoardGame, serviceImpl.UpdateBoardGame).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +185,7 @@ namespace MyBGList.gRPC {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, GrpcBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetBoardGame, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::MyBGList.gRPC.BoardGameRequest, global::MyBGList.gRPC.BoardGameResponse>(serviceImpl.GetBoardGame));
+      serviceBinder.AddMethod(__Method_UpdateBoardGame, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::MyBGList.gRPC.UpdateBoardGameRequest, global::MyBGList.gRPC.BoardGameResponse>(serviceImpl.UpdateBoardGame));
     }
 
   }

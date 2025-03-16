@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\MyBGList\\MyBGList\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\grpccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\grpccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\grpc\\grpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:grpc\\grpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\grpc\\grpc.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:grpc\\grpc.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "grpc.proto",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\grpc.proto",
+              "RelativeDocumentMoniker": "gRPC\\grpc.proto",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\grpc.proto",
+              "RelativeToolTip": "gRPC\\grpc.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-03-16T17:48:03.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GrpcService.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\GrpcService.cs",
+              "RelativeDocumentMoniker": "gRPC\\GrpcService.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\GrpcService.cs",
+              "RelativeToolTip": "gRPC\\GrpcService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T17:47:41.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GrpcController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\GrpcController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GrpcController.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\GrpcController.cs",
+              "RelativeToolTip": "Controllers\\GrpcController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwCsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T17:39:52.992Z",
+              "EditorCaption": ""
             }
           ]
         }
