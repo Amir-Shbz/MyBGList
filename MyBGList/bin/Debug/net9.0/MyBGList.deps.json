@@ -23,6 +23,7 @@
           "Serilog.AspNetCore": "9.0.0",
           "Serilog.Sinks.MSSqlServer": "8.1.0",
           "Swashbuckle.AspNetCore": "7.3.1",
+          "Swashbuckle.AspNetCore.Annotations": "7.3.1",
           "System.Linq.Dynamic.Core": "1.6.0.2"
         },
         "runtime": {
@@ -1608,6 +1609,17 @@
           "Swashbuckle.AspNetCore.SwaggerUI": "7.3.1"
         }
       },
+      "Swashbuckle.AspNetCore.Annotations/7.3.1": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "7.3.1"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "assemblyVersion": "7.3.1.0",
+            "fileVersion": "7.3.1.1111"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/7.3.1": {
         "dependencies": {
           "Microsoft.OpenApi": "1.6.22"
@@ -2669,6 +2681,13 @@
       "sha512": "sha512-6u8w+UXp/sF89xQjfydWw6znQrUpbpFOmEIs8ODE+S0bV+mCQ9dNP4mk+HRsGHylpDaP5KSYSCEfFSgluLXHsA==",
       "path": "swashbuckle.aspnetcore/7.3.1",
       "hashPath": "swashbuckle.aspnetcore.7.3.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Annotations/7.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DuH1WoZDFGhD0p9b9ru1kNlC/BBCQyArKUzDQJMt3bPfia/27Yi69IYYC3+QydZwm2qSXcaUy9Z5CFvXb/X9Tg==",
+      "path": "swashbuckle.aspnetcore.annotations/7.3.1",
+      "hashPath": "swashbuckle.aspnetcore.annotations.7.3.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.Swagger/7.3.1": {
       "type": "package",

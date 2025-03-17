@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\Projects\\MyBGList\\MyBGList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\grpccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\grpccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:controllers\\boardgamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\grpc\\grpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:grpc\\grpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\grpc\\grpc.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:grpc\\grpc.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\customkeyvaluefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\customkeyvaluefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\attributes\\customkeyvalueattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:attributes\\customkeyvalueattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\passwordrequestfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\passwordrequestfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\authrequirementfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\authrequirementfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "grpc.proto",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\grpc.proto",
-              "RelativeDocumentMoniker": "gRPC\\grpc.proto",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\grpc.proto",
-              "RelativeToolTip": "gRPC\\grpc.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2025-03-16T17:48:03.424Z",
+              "DocumentIndex": 0,
+              "Title": "BoardGamesController.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BoardGamesController.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\BoardGamesController.cs",
+              "RelativeToolTip": "Controllers\\BoardGamesController.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAuwKsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T18:26:28.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GrpcService.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\GrpcService.cs",
-              "RelativeDocumentMoniker": "gRPC\\GrpcService.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\gRPC\\GrpcService.cs",
-              "RelativeToolTip": "gRPC\\GrpcService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCcAAAAuAAAAAAAAAA==",
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T17:47:41.596Z",
+              "WhenOpened": "2025-03-17T18:24:16.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GrpcController.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\GrpcController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GrpcController.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Controllers\\GrpcController.cs",
-              "RelativeToolTip": "Controllers\\GrpcController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAUwCsAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CustomKeyValueFilter.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\CustomKeyValueFilter.cs",
+              "RelativeDocumentMoniker": "Swagger\\CustomKeyValueFilter.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\CustomKeyValueFilter.cs",
+              "RelativeToolTip": "Swagger\\CustomKeyValueFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T17:39:52.992Z",
+              "WhenOpened": "2025-03-17T18:20:56.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomKeyValueAttribute.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\CustomKeyValueAttribute.cs",
+              "RelativeDocumentMoniker": "Attributes\\CustomKeyValueAttribute.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\CustomKeyValueAttribute.cs",
+              "RelativeToolTip": "Attributes\\CustomKeyValueAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T18:19:53.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordRequestFilter.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\PasswordRequestFilter.cs",
+              "RelativeDocumentMoniker": "Swagger\\PasswordRequestFilter.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\PasswordRequestFilter.cs",
+              "RelativeToolTip": "Swagger\\PasswordRequestFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T18:16:10.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthRequirementFilter.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\AuthRequirementFilter.cs",
+              "RelativeDocumentMoniker": "Swagger\\AuthRequirementFilter.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\AuthRequirementFilter.cs",
+              "RelativeToolTip": "Swagger\\AuthRequirementFilter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T17:54:29.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAawL4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:39:30.74Z",
               "EditorCaption": ""
             }
           ]

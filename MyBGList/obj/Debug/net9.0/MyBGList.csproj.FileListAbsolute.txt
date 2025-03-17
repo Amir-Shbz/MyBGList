@@ -234,3 +234,6 @@ D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Core.Api.dll
 D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Net.Client.dll
 D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Net.ClientFactory.dll
 D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Grpc.Net.Common.dll
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\MyBGList.xml
+D:\Projects\MyBGList\MyBGList\obj\Debug\net9.0\MyBGList.xml
+D:\Projects\MyBGList\MyBGList\bin\Debug\net9.0\Swashbuckle.AspNetCore.Annotations.dll

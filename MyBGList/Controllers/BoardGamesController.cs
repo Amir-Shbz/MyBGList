@@ -8,6 +8,8 @@ using MyBGList.Constants;
 using Microsoft.Extensions.Caching.Memory;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
+using Swashbuckle.AspNetCore.Annotations;
+using MyBGList.Attributes;
 
 
 
@@ -39,7 +41,14 @@ namespace MyBGList.Controllers
         [HttpGet(Name = "GetBoardGames")]
         [EnableCors("AnyOrigin")]
         [ResponseCache(CacheProfileName = "Any-60")]
-        public async Task<RestDTO<BoardGame[]>> Get([FromQuery] RequestDTO<BoardGameDTO> input)
+        [SwaggerOperation( 
+            Summary = "Get a list of board games.", 
+            Description = "Retrieves a list of board games " + 
+            "with custom paging, sorting, and filtering rules.")]
+        public async Task<RestDTO<BoardGame[]>> Get([FromQuery]
+                                                    [SwaggerParameter("A DTO object that can be used " +
+                                                        "to customize the data-retrieval parameters.")]
+                                                    RequestDTO<BoardGameDTO> input)
         {
             _logger.LogInformation(CustomLogEvents.BoardGamesController_Get,
                                                 "Get method started at {0}", DateTime.Now.ToString("HH:mm"));
@@ -84,6 +93,9 @@ namespace MyBGList.Controllers
         [Authorize(Roles = RoleNames.Moderator)]
         [HttpPost(Name = "UpdateBoardGame")]
         [ResponseCache(NoStore = true)]
+        [SwaggerOperation( 
+            Summary = "Updates a board game.", 
+            Description = "Updates the board game's data.")]
         public async Task<RestDTO<BoardGame?>> Post(BoardGameDTO model)
         {
             var boardgame = await _context.BoardGames.Where(b => b.Id == model.Id).FirstOrDefaultAsync();
@@ -118,6 +130,9 @@ namespace MyBGList.Controllers
         [Authorize(Roles = RoleNames.Administrator)]
         [HttpDelete(Name = "DeleteBoardGame")]
         [ResponseCache(NoStore = true)]
+        [SwaggerOperation( 
+            Summary = "Deletes a board game.", 
+            Description = "Deletes a board game from the database.")]
         public async Task<RestDTO<BoardGame?>> Delete(int id)
         {
             var boardgame = await _context.BoardGames.Where(b => b.Id == id).FirstOrDefaultAsync();
@@ -145,7 +160,10 @@ namespace MyBGList.Controllers
 
         [HttpGet("{id}")]
         [ResponseCache(CacheProfileName = "Any-60")]
-        public async Task<RestDTO<BoardGame?>> GetBoardGame(int id)
+        [SwaggerOperation( 
+            Summary = "Get a single board game.", 
+            Description = "Retrieves a single board game with the given Id.")]
+        public async Task<RestDTO<BoardGame?>> GetBoardGame([CustomKeyValue("x-test-3", "value 3")]  int id)
         {
             _logger.LogInformation(CustomLogEvents.BoardGamesController_Get, "GetBoardGame method started.");
             BoardGame? result = null;

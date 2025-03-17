@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
@@ -17,6 +18,7 @@ using MyBGList.Models;
 using MyBGList.Swagger;
 using Serilog;
 using Serilog.Sinks.MSSqlServer;
+using Swashbuckle.AspNetCore.Annotations;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -82,7 +84,13 @@ builder.Services.AddControllers(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+    {
+        options.EnableAnnotations();
+        var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        options.IncludeXmlComments(System.IO.Path.Combine(AppContext.BaseDirectory, xmlFilename));
+    }
+);
 
 builder.Services.AddCors(options => {
     options.AddDefaultPolicy(cfg => {
@@ -163,20 +171,24 @@ builder.Services.AddSwaggerGen(options => {
             Scheme = "bearer"
         });
 
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement 
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
+    //options.AddSecurityRequirement(new OpenApiSecurityRequirement 
+    //{
+    //    {
+    //        new OpenApiSecurityScheme
+    //        {
+    //            Reference = new OpenApiReference
+    //            {
+    //                Type = ReferenceType.SecurityScheme,
+    //                Id = "Bearer"
+    //            }
+    //        },
+    //        Array.Empty<string>()
+    //    }
+    //});
+    options.OperationFilter<AuthRequirementFilter>();
+    options.DocumentFilter<CustomDocumentFilter>();
+    options.RequestBodyFilter<PasswordRequestFilter>();
+    options.SchemaFilter<CustomKeyValueFilter>();
 
 });
 
@@ -301,6 +313,13 @@ app.MapGet("/cache/test/2", [EnableCors("AnyOrigin")]
 app.MapGet("/auth/test/1",
     [Authorize]
     [EnableCors("AnyOrigin")]
+    [SwaggerOperation(
+        Tags = new[] { "Auth" },
+        Summary = "Auth test #1 (authenticated users).",
+        Description = "Returns 200 - OK if called by " + 
+        "an authenticated user regardless of its role(s).")]
+    [SwaggerResponse(StatusCodes.Status200OK, "Authorized")]
+    [SwaggerResponse(StatusCodes.Status401Unauthorized, "Not authorized")]
     [ResponseCache(NoStore = true)] () =>
     {
         return Results.Ok("You are authorized!");
@@ -309,14 +328,24 @@ app.MapGet("/auth/test/1",
 app.MapGet("/auth/test/2",
     [Authorize(Roles = RoleNames.Moderator)]
     [EnableCors("AnyOrigin")]
+    [SwaggerOperation(
+        Tags = new[] { "Auth" },
+        Summary = "Auth test #2 (Moderator role).", 
+        Description = "Returns 200 - OK status code if called by " + 
+        "an authenticated user assigned to the Moderator role.")]
     [ResponseCache(NoStore = true)] () =>
     {
-    return Results.Ok("You are authorized!");
+        return Results.Ok("You are authorized!");
     });
 
 app.MapGet("/auth/test/3",
     [Authorize(Roles = RoleNames.Administrator)]
     [EnableCors("AnyOrigin")]
+    [SwaggerOperation(
+        Tags = new[] { "Auth" },
+        Summary = "Auth test #3 (Administrator role).", 
+        Description = "Returns 200 - OK if called by " + 
+        "an authenticated user assigned to the Administrator role.")]
     [ResponseCache(NoStore = true)] () =>
     {
         return Results.Ok("You are authorized!");
