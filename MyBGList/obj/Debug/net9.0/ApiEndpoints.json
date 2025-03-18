@@ -89,7 +89,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_17",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_18",
     "RelativePath": "auth/test/1",
     "HttpMethod": "GET",
     "IsController": false,
@@ -110,7 +110,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_18",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_19",
     "RelativePath": "auth/test/2",
     "HttpMethod": "GET",
     "IsController": false,
@@ -126,7 +126,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_19",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_20",
     "RelativePath": "auth/test/3",
     "HttpMethod": "GET",
     "IsController": false,
@@ -269,7 +269,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_15",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_16",
     "RelativePath": "cache/test/1",
     "HttpMethod": "GET",
     "IsController": false,
@@ -285,7 +285,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_16",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_17",
     "RelativePath": "cache/test/2",
     "HttpMethod": "GET",
     "IsController": false,
@@ -301,7 +301,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_14",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_15",
     "RelativePath": "COD/test",
     "HttpMethod": "GET",
     "IsController": false,
@@ -418,7 +418,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__12",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__13",
     "RelativePath": "error",
     "HttpMethod": "GET",
     "IsController": false,
@@ -434,7 +434,7 @@
   },
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_13",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_14",
     "RelativePath": "error/Test",
     "HttpMethod": "GET",
     "IsController": false,

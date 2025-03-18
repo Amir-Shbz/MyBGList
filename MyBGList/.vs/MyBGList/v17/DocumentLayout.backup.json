@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\Projects\\MyBGList\\MyBGList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\customkeyvaluefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\customkeyvaluefilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\attributes\\customkeyvalueattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:attributes\\customkeyvalueattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\passwordrequestfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\passwordrequestfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|d:\\projects\\mybglist\\mybglist\\swagger\\authrequirementfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C6C4752-4602-4FCA-BFFB-624B7E167082}|MyBGList.csproj|solutionrelative:swagger\\authrequirementfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,79 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:24:16.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomKeyValueFilter.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\CustomKeyValueFilter.cs",
-              "RelativeDocumentMoniker": "Swagger\\CustomKeyValueFilter.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\CustomKeyValueFilter.cs",
-              "RelativeToolTip": "Swagger\\CustomKeyValueFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:20:56.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomKeyValueAttribute.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\CustomKeyValueAttribute.cs",
-              "RelativeDocumentMoniker": "Attributes\\CustomKeyValueAttribute.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Attributes\\CustomKeyValueAttribute.cs",
-              "RelativeToolTip": "Attributes\\CustomKeyValueAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:19:53.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PasswordRequestFilter.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\PasswordRequestFilter.cs",
-              "RelativeDocumentMoniker": "Swagger\\PasswordRequestFilter.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\PasswordRequestFilter.cs",
-              "RelativeToolTip": "Swagger\\PasswordRequestFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:16:10.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthRequirementFilter.cs",
-              "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\AuthRequirementFilter.cs",
-              "RelativeDocumentMoniker": "Swagger\\AuthRequirementFilter.cs",
-              "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Swagger\\AuthRequirementFilter.cs",
-              "RelativeToolTip": "Swagger\\AuthRequirementFilter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T17:54:29.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projects\\MyBGList\\MyBGList\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAAAawL4AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAAANgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:39:30.74Z",
+              "WhenOpened": "2025-03-18T11:04:55.183Z",
               "EditorCaption": ""
             }
           ]
